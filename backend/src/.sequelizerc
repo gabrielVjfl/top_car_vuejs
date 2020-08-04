@@ -1,0 +1,11 @@
+ 
+const path = require('path')
+ 
+ 
+module.exports = {
+    // PEGA A CONNEXÃO COM O BANCO DE DADOS, PARA CRIAR A DATABASE
+config: path.resolve(__dirname, 'config', 'bd.js'),
+ 
+    // ONDE SALVARÁ AS MIGRATION
+    'migrations-path': path.resolve(__dirname, 'database', 'migrations')
+}
